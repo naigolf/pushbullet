@@ -7,7 +7,7 @@ submit.onclick = function() {
         websocket.close();
     }
     
-    websocket = new WebSocket('wss://stream.pushbullet.com/websocket/' + apiKey.value);
+    websocket = new WebSocket('wss://stream.pushbullet.com/websocket/o.NVVV8rWItA0nFsetHk14mdFNo49FgHAx');
     websocket.onopen = function(e) {
         messages.innerHTML += "<p>WebSocket onopen</p>";
     }
