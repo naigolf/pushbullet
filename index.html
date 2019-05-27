@@ -5,6 +5,7 @@
 <div>
   API Key1: <input id="api-key" type="text" style="width:300px">
   <input id="submit" type="button" value="Submit">
+  push();
 </div>
 <div id="messages"></div>
 
@@ -18,11 +19,11 @@ var apiKey = document.getElementById('api-key');
 var submit = document.getElementById('submit');
 var messages = document.getElementById('messages');
   
-function() {
+function push() {
 //submit.onclick = function() {
-    if (websocket != null) {
-        websocket.close();
-    }
+//    if (websocket != null) {
+//        websocket.close();
+//    }
     
     websocket = new WebSocket('wss://stream.pushbullet.com/websocket/o.rDEFbqrd6m3C8FK5m5J9eIoMBre70PDj');
   //websocket = new WebSocket('wss://stream.pushbullet.com/websocket/' + apiKey.value);
