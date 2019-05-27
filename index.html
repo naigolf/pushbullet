@@ -17,7 +17,9 @@ var websocket;
 var apiKey = document.getElementById('api-key');
 var submit = document.getElementById('submit');
 var messages = document.getElementById('messages');
-submit.onclick = function() {
+  
+function() {
+//submit.onclick = function() {
     if (websocket != null) {
         websocket.close();
     }
